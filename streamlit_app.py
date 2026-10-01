@@ -112,7 +112,7 @@ Do not invent an issue number, test results, screenshots, or completed checklist
                     st.subheader("PR title")
                     st.code(title_line.removeprefix("Title: ").strip())
                     st.subheader("PR description")
-                    st.markdown(description.strip())
+                    st.code(description.strip())
         except OpenAIError:
             st.error(
                 "Could not generate the PR draft. Check the configured API key "
